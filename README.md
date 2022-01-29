@@ -9,6 +9,8 @@ In the referred repo, there are options regarding character set and sort order i
 Sybase 16 does not set the sort_order with the `srvbuildres`-utility from version 16 on it seems.
 > The solution is to use the `sqllocres` utility.
 
+This utility requires the ASE server to run, which is the reason for using a script to update this, with a bit of waiting in it. The utility automatically shuts down the server once completed.
+
 ## Configuration values
 
 See the `sqlloc.rs`-file. This is based on the example found in the `server installation path/init/sample-resource-files`.
